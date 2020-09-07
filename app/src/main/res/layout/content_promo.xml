@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/fragment_pomotodo"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/textlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/background_card"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+
+            >
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/text_field_boxes2"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center"
+
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+
+                android:hint="Task"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:textSize="15dp"
+                app:prefix="$ " />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+
+            >
+
+            <ImageButton
+                android:id="@+id/dark_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_style"
+                android:src="@drawable/ic_add" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/borderss"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textlayout"
+        android:layout_marginRight="8dp"
+        android:background="@color/black">
+
+        <com.yydcdut.sdlv.SlideAndDragListView
+            android:id="@+id/lv_edit"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="?android:selectableItemBackground"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:listSelector="@drawable/list_selector"
+
+
+            ></com.yydcdut.sdlv.SlideAndDragListView>
+
+    </RelativeLayout>
+</RelativeLayout>
+

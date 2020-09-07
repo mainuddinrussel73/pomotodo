@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pro_backup"
+    tools:showIn="@layout/activity_probackup"
+    android:id="@+id/coordinate">
+
+    <RelativeLayout
+        android:id="@+id/coordinate_j"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_card">
+
+
+        <RelativeLayout
+            android:id="@+id/coordinate_backup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/base_rounded_white">
+
+            <EditText
+                android:id="@+id/retext"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="66dp"
+                android:padding="15dp"
+                android:background="@drawable/backgroundborder"
+                android:hint="@string/File">
+
+
+            </EditText>
+
+            <com.sanojpunchihewa.glowbutton.GlowButton
+                android:id="@+id/click"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/retext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/Ok"
+                android:textColor="@android:color/white"
+                app:buttonColor="@color/glow_color_red"
+                app:glowColor="@color/glow_color_red"
+                app:cornerRadius="5dp"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/restore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginTop="120dp"
+            android:padding="30dp"
+            android:text="@string/restore"
+            android:textColor="@android:color/white"
+            app:buttonColor="@color/glow_color_red"
+            app:glowColor="@color/glow_color_red"
+            app:cornerRadius="5dp"
+            android:textSize="12dp" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/backup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="111dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:text="@string/Backup"
+            android:textColor="@android:color/white"
+            app:buttonColor="@color/glow_color_red"
+            app:glowColor="@color/glow_color_red"
+            app:cornerRadius="5dp"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "565901057645",
+    "firebase_url": "https://pomotodo-3a2fb.firebaseio.com",
+    "project_id": "pomotodo-3a2fb",
+    "storage_bucket": "pomotodo-3a2fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565901057645:android:4ebe028de05da8fbdbe964",
+        "android_client_info": {
+          "package_name": "com.example.mainuddin.pomotodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565901057645-nmlbcm3m36gq6ejcntjks2vmj6jug7fg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mainuddin.pomotodo",
+            "certificate_hash": "ea037c74ee3827cecf1d2462e2d35655d9094265"
+          }
+        },
+        {
+          "client_id": "565901057645-qn66s4ovpcfau16g15uck2nafm04fo43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA072c5NLNKht0cg7F7PbrJveyC6wrENDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565901057645-qn66s4ovpcfau16g15uck2nafm04fo43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/promotodo_activity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/back_time">
+
+        <TextView
+            android:id="@+id/totaltask"
+            android:layout_marginTop="155dp"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:fontFamily="@font/lilita_regular"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="23"
+            android:gravity="center"
+            android:textColor="@color/background_color_red"
+            android:textSize="23dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@+id/totaltask"
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/belgrano"
+            android:text="Total Task"
+            android:gravity="center"
+            android:textColor="@color/background_color_red"
+            android:textSize="10dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/totalhour"
+            android:layout_marginTop="155dp"
+            android:layout_toRightOf="@+id/totaltask"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:ems="2"
+            android:fontFamily="@font/lilita_regular"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="4"
+            android:gravity="center"
+            android:textColor="@color/background_color_red"
+            android:textSize="23dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@+id/totalhour"
+            android:layout_toRightOf="@+id/totaltask"
+            android:layout_marginTop="5dp"
+            android:layout_width="80dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/belgrano"
+            android:text="Total Hour"
+            android:gravity="center"
+            android:textColor="@color/background_color_red"
+            android:textSize="10dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/taskremain"
+            android:layout_marginTop="155dp"
+            android:layout_toRightOf="@+id/totalhour"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:fontFamily="@font/lilita_regular"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="14.0"
+            android:gravity="center"
+            android:textColor="@color/background_color_red"
+            android:textSize="23dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_below="@+id/taskremain"
+            android:layout_toRightOf="@+id/totalhour"
+            android:layout_marginTop="5dp"
+            android:layout_width="110dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/belgrano"
+            android:text="Tasks Remain"
+            android:gravity="center"
+            android:textColor="@color/background_color_red"
+            android:textSize="10dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="64dp"
+        android:layout_below="@+id/card_view"
+        android:background="@drawable/almost">
+
+        <include layout="@layout/content_promo" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

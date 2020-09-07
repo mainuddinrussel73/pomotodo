@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bbnb"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/background_card_dark"
+    android:theme="@style/AppTheme">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/listview">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/icon_only"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:backgroundTint="@color/uou"
+            android:layout_marginTop="65dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:cardCornerRadius="@dimen/activity_horizontal_margin"
+            android:paddingTop="80dp"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:id="@+id/routine"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:fontFamily="@font/lilita_regular"
+                android:gravity="left"
+                android:text="আজকের রুটিন : "
+                android:textColor="@color/background"
+                android:textSize="25dp">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:clipToPadding="false"
+                android:dividerHeight="10dp"
+                android:divider="@null"
+                android:layout_marginTop="40dp"
+                android:fastScrollAlwaysVisible="false"
+                android:fastScrollEnabled="true"
+                android:scrollbarStyle="outsideOverlay"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@color/colorTransparent"
+                android:id="@+id/recyclerView"
+                android:scrollbars="vertical" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_only"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add"
+            android:tint="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fab"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+
+                android:paddingBottom="@dimen/activity_horizontal_margin">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fourcard"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    app:cardCornerRadius="@dimen/activity_horizontal_margin"
+                    app:cardElevation="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/lilita_regular"
+                        android:gravity="left"
+                        android:text="Prayer Times : "
+                        android:textColor="@color/background"
+                        android:textSize="25dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/faz"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/lilita_regular"
+                        android:gravity="center"
+                        android:text="Fafajr :  "
+                        android:textColor="@color/background"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/zoh"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/lilita_regular"
+                        android:gravity="center"
+                        android:text="Thuhr : "
+                        android:textColor="@color/background"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/asr"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="120dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/lilita_regular"
+                        android:gravity="center"
+                        android:text="Assr : "
+                        android:textColor="@color/background"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/mag"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/lilita_regular"
+                        android:gravity="center"
+                        android:text="Maghrib : "
+                        android:textColor="@color/background"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/esa"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/lilita_regular"
+                        android:gravity="center"
+                        android:text="Ishaa : "
+                        android:textColor="@color/background"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

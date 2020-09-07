@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">166dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="slv_item_bg_btn_width">48dip</dimen>
+    <dimen name="slv_item_bg_btn2_width">60dip</dimen>
+    <dimen name="slv_item_bg_btn_width_img">100dip</dimen>
+    <dimen name="action_button_margin">696dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="padding_checkbox">10dp</dimen>
+
+    <dimen name="indicator_height">2dp</dimen>
+    <dimen name="alerter_activity_horizontal_margin">18dp</dimen>
+    <dimen name="alerter_activity_vertical_margin">16dp</dimen>
+    <dimen name="status_bar_button_width_height">48dp</dimen>
+    <dimen name="status_bar_album_art">64dp</dimen>
+    <dimen name="status_bar_button_info_container_padding_left">11dp</dimen>
+    <dimen name="notification_expanded_height">128.0dip</dimen>
+    <dimen name="play_controls_notification">48.0dip</dimen>
+    <dimen name="notification_padding">8.0dip</dimen>
+    <dimen name="padd">20dp</dimen>
+
+    <dimen name="slv_item_height">66dip</dimen>
+    <dimen name="slv_item_height2">120dip</dimen>
+
+
+</resources>

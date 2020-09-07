@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><!--Don't set margin value in the parent view-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_card">
+
+    <FrameLayout
+        android:layout_width="15dp"
+        android:layout_height="95dp"
+        android:padding="2dp"
+        android:id="@+id/item_line">
+
+        <!-- the semi transparent circle on the line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/full_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/bbb"
+        android:text="flfllfkf" />
+
+    <TextView
+        android:id="@+id/num_of_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="@string/tree_activity" />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/time_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:text="Start: 000:00"
+        android:textSize="10dp"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/time_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:text="End: 000:00"
+        android:textSize="10dp"
+        android:textColor="@color/red" />
+
+
+</RelativeLayout>

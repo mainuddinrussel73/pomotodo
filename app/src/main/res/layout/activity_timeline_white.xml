@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timelineview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/fragment_timeline"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:paddingBottom="8dp"
+    android:background="@drawable/base_rounded_white">
+
+
+    <xyz.sangcomz.stickytimelineview.TimeLineRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isSticky="true"
+        android:layout_margin="5dp"
+        app:sectionTitleTextColor="@color/red"
+        app:timeLineWidth="2dp"
+        app:timeLineColor="@color/colorPrimary"
+        app:spanCount="6"
+        app:sectionBackgroundColor="#e6e6e6"
+
+        />
+</RelativeLayout>

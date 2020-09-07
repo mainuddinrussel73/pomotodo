@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".promodetail"
+    android:id="@+id/pro_detail"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="288dp"
+        android:background="@drawable/back_time">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/dddd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_card"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="-15dp">
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/thridlayout" />
+
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_view"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-110dp"
+        app:pulse_color="@color/uou"
+        app:pulse_count="10"
+        app:pulse_duration="7000"
+        app:pulse_interpolator="Linear"
+        app:pulse_repeat="10000"
+        app:pulse_startFromScratch="true"></pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ripple"
+        app:tint="@color/white"
+        android:backgroundTint="@color/uou"
+        android:src="@drawable/ic_add" />
+
+
+</RelativeLayout>

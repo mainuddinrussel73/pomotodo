@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_tree">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+
+        <ImageView
+            android:id="@+id/spark_button"
+            android:layout_width="100dp"
+            android:layout_marginTop="70dp"
+            android:layout_height="80dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/collectedTV"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/spark_button"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Collected : "
+            android:fontFamily="@font/lilita_regular"
+            android:textSize="25dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center">
+
+        </TextView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/CorrWrong4"
+        android:layout_width="220dp"
+        android:layout_height="786dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/content"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"
+        android:src="@drawable/full_tree" />
+
+    <ImageView
+        android:id="@+id/CorrWrong"
+        android:layout_width="90dp"
+        android:layout_height="786dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/content"
+        android:layout_marginBottom="-500dp"
+        android:layout_marginTop="-55dp"
+        android:visibility="gone"
+        android:src="@drawable/seed" />
+
+    <ImageView
+        android:id="@+id/CorrWrong1"
+        android:layout_width="100dp"
+        android:layout_height="786dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/content"
+        android:layout_marginBottom="-500dp"
+        android:layout_marginTop="-65dp"
+        android:visibility="gone"
+        android:src="@drawable/sprout" />
+
+    <ImageView
+        android:id="@+id/CorrWrong2"
+        android:layout_width="130dp"
+        android:layout_height="786dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/content"
+        android:layout_marginBottom="-260dp"
+        android:layout_marginTop="-75dp"
+        android:visibility="gone"
+        android:src="@drawable/plant" />
+
+    <ImageView
+        android:id="@+id/CorrWrong3"
+        android:layout_width="240dp"
+        android:layout_height="786dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/content"
+        android:layout_marginBottom="-140dp"
+        android:layout_marginTop="-75dp"
+        android:visibility="gone"
+        android:src="@drawable/grow_tree" />
+
+    <ImageView
+        android:id="@+id/CorrWrong5"
+        android:layout_width="324dp"
+        android:layout_height="835dp"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="-239dp"
+        android:layout_marginBottom="-140dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/tree_trunk" />
+
+</RelativeLayout>
