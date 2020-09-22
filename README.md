@@ -1,10 +1,6 @@
 # pomotodo
 <img src="https://github.com/mainuddinrussel73/pomotodo/blob/master/ic_launcher_foreground.png" width="80">
 
-
-This game is made by using unity game engine...
-
-
 some demo image of this game is given below.
 
 
